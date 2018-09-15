@@ -28,15 +28,16 @@
 
 #### History and State
 - The history is the sequence of observations, actions, rewards  
-&emsp;&emsp; 
+<div align="center">
 <img src="http://latex.codecogs.com/gif.latex?H_%7Bt%7D%20%3D%20O_%7B1%7D%2C%20R_%7B1%7D%2C%20A_%7B1%7D%2C%20...%2C%20O_%7Bt%7D%2C%20R_%7Bt%7D">
+</div>
 - What happens next depends on the history
     - Agent selects actions
     - Environment selects observations/rewards
 - State is the information used to determine what happens next  
-&emsp;&emsp;<img src="http://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20f%28H_%7Bt%7D%29">
-
-
+<div align="center">
+<img src="http://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20f%28H_%7Bt%7D%29">
+</div>
 #### Environment State
 - The environment state is the environment's private representation
 - pick next observation/reward
@@ -51,7 +52,9 @@
 
 #### Information State
 - An information state (Markov state) contains all useful information from the history. A state S is Markov if and only if  
-&emsp;&emsp;<img src="http://latex.codecogs.com/gif.latex?P%5BS_%7Bt&plus;1%7D%7C%20S_%7Bt%7D%5D%20%3D%20P%5BS_%7Bt&plus;1%7D%7C%20S_%7B1%7D%2C%20...%2C%20S_%7Bt%7D%5D">
+<div align="center">
+<img src="http://latex.codecogs.com/gif.latex?P%5BS_%7Bt&plus;1%7D%7C%20S_%7Bt%7D%5D%20%3D%20P%5BS_%7Bt&plus;1%7D%7C%20S_%7B1%7D%2C%20...%2C%20S_%7Bt%7D%5D">
+</div>
 
 #### Full observability, Markov decision process (MDP)
 - agent state = environment state = information state
