@@ -38,6 +38,7 @@
 <div align="center">
 <img src="http://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20f%28H_%7Bt%7D%29">
 </div>
+
 #### Environment State
 - The environment state is the environment's private representation
 - pick next observation/reward
