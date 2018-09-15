@@ -28,8 +28,8 @@
 
 #### History and State
 - The history is the sequence of observations, actions, rewards  
-&emsp;&emsp;$$H_{t} = O_{1}, R_{1}, A_{1}, ..., O_{t}, R_{t}
-$$
+&emsp;&emsp;H_{t} = O_{1}, R_{1}, A_{1}, ..., O_{t}, R_{t}
+
 - What happens next depends on the history
     - Agent selects actions
     - Environment selects observations/rewards
