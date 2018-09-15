@@ -31,6 +31,7 @@
 <div align="center">
 <img src="http://latex.codecogs.com/gif.latex?H_%7Bt%7D%20%3D%20O_%7B1%7D%2C%20R_%7B1%7D%2C%20A_%7B1%7D%2C%20...%2C%20O_%7Bt%7D%2C%20R_%7Bt%7D">
 </div>
+
 - What happens next depends on the history
     - Agent selects actions
     - Environment selects observations/rewards
