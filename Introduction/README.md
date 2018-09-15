@@ -1,3 +1,4 @@
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 ## Introduction to Reinforcement Learning
 <div align="center">
 <img src="http://img.mp.itc.cn/upload/20170605/5623cbe8f8bd40008800160f8b8c1692_th.jpg"  height="350" width="350">
