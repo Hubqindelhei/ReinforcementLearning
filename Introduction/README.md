@@ -1,9 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
-<img src="http://www.forkosh.com/mathtex.cgi? O_{1}">
-
-
 ## Introduction to Reinforcement Learning
 <div align="center">
 <img src="http://img.mp.itc.cn/upload/20170605/5623cbe8f8bd40008800160f8b8c1692_th.jpg"  height="350" width="350">
@@ -17,7 +11,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 - Agent's actions affect the subsequent data it receives
 
 #### Rewards
-- A reward $R_{t}$ is a scalar feedback signal
+- A reward is a scalar feedback signal
 - Indicates how well agent is doing at step t
 - The agent's job is to maximise cumulative reward
 
@@ -34,13 +28,14 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
 #### History and State
 - The history is the sequence of observations, actions, rewards  
-&emsp;&emsp;H_{t} = O_{1}, R_{1}, A_{1}, ..., O_{t}, R_{t}
-
+&emsp;&emsp; 
+<img src="http://latex.codecogs.com/gif.latex?H_%7Bt%7D%20%3D%20O_%7B1%7D%2C%20R_%7B1%7D%2C%20A_%7B1%7D%2C%20...%2C%20O_%7Bt%7D%2C%20R_%7Bt%7D">
 - What happens next depends on the history
     - Agent selects actions
     - Environment selects observations/rewards
 - State is the information used to determine what happens next  
-&emsp;&emsp;$S_{t} = f(H_{t})$
+&emsp;&emsp;<img src="http://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20f%28H_%7Bt%7D%29">
+
 
 #### Environment State
 - The environment state is the environment's private representation
@@ -55,14 +50,14 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 - it can be any function of history
 
 #### Information State
-- An information state (Markov state) contains all useful information from the history. A state $S_{t}$ is Markov if and only if  
-&emsp;&emsp;$P[S_{t+1}| S_{t}] = P[S_{t+1}| S_{1}, ..., S_{t}]$
+- An information state (Markov state) contains all useful information from the history. A state S is Markov if and only if  
+&emsp;&emsp;<img src="http://latex.codecogs.com/gif.latex?P%5BS_%7Bt&plus;1%7D%7C%20S_%7Bt%7D%5D%20%3D%20P%5BS_%7Bt&plus;1%7D%7C%20S_%7B1%7D%2C%20...%2C%20S_%7Bt%7D%5D">
 
 #### Full observability, Markov decision process (MDP)
 - agent state = environment state = information state
 
 #### Partially Observable Environments, Partially Observable MDP
-- agent state  $\neq$  environment state
+- agent state != environment state
 
 #### Major Components of an RL Agent
 1. Policy
